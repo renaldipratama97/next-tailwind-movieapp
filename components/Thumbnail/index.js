@@ -18,6 +18,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
         }
         height={1080}
         width={1920}
+        alt="posted-movie"
       />
       <div className="p-2">
         <h1 className="text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">
@@ -32,5 +33,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
     </div>
   );
 });
+
+Thumbnail.displayName = "Thumbnail";
 
 export default Thumbnail;
